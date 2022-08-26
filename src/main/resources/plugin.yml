@@ -1,0 +1,7 @@
+name: Gangs
+version: '${version}'
+main: io.github.thelordman.gangs.Gangs
+api-version: 1.18
+authors: [ thelordman ]
+description: A plugin that allows players to create their own gangs that they can invite other players to.
+website: thelordman.github.io
