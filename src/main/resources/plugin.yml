@@ -5,3 +5,7 @@ api-version: 1.18
 author: thelordman
 description: A plugin that allows players to create their own gangs that they can invite other players to.
 website: thelordman.github.io
+commands:
+  gang:
+    description: Manage gangs.
+    usage: /gang <info | top | join | leave | invite | chat> [<argument 2>] [<argument 3>]

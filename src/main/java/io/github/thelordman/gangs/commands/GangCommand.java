@@ -1,6 +1,7 @@
 package io.github.thelordman.gangs.commands;
 
 import io.github.thelordman.gangs.utilities.GangUtil;
+import io.github.thelordman.gangs.utilities.Util;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
@@ -28,6 +29,8 @@ public class GangCommand implements TabExecutor {
                 case "invite" -> null;
                 default -> Collections.emptyList();
             };
+            case 3 -> args[0].equals("top") && Util.contains(new String[]{"kills", "deaths", "blocks", "playtime", "members"}, args[1]) ?
+                    StringUtil.copyPartialMatches(args[2], List.of("global", "gang"), new ArrayList<>()) : Collections.emptyList();
             default -> Collections.emptyList();
         };
     }

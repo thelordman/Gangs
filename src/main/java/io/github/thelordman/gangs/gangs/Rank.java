@@ -5,5 +5,5 @@ public enum Rank {
     TRUSTED,
     ELDER,
     CO_OWNER,
-    OWNER;
+    OWNER
 }
